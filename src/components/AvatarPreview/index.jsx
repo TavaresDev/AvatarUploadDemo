@@ -12,6 +12,7 @@ const CropWrap = styled.div`
 	display: flex;
 	position: relative;
 	color: #677489;
+
 	& > button {
 		color: #677489;
 		position: absolute;
@@ -21,7 +22,10 @@ const CropWrap = styled.div`
 		border: 0;
 	}
 	img {
+        margin-top:2rem;
+        margin-left:2rem;
 		border-radius: 100px;
+        width:120px;
 	}
 `
 const SliderWrap = styled.div`

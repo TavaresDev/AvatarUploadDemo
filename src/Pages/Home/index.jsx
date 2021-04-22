@@ -1,7 +1,7 @@
 import React from "react"
 import AvatarUpload from "../../components/AvatarUpload"
 import { useState } from "react"
-import { Container, Grid, Box } from "@material-ui/core"
+import { Container, Box } from "@material-ui/core"
 
 const Home = () => {
 	const [croppedImage, setCroppedImage] = useState(null)
