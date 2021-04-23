@@ -1,5 +1,5 @@
 import React from "react"
-import { Grid, Typography } from "@material-ui/core"
+import { Grid } from "@material-ui/core"
 import ClearIcon from "@material-ui/icons/Clear"
 import styled from "styled-components"
 
@@ -58,7 +58,7 @@ const AvatarShow = ({ croppedImage, setCroppedImage }) => {
 				<ClearIcon />
 			</button>
 			<Grid sm={4}>
-				<img alt='Preview Image' src={croppedImage} />
+				<img alt='Preview' src={croppedImage} />
 			</Grid>
 			<Grid sm={8}>
 				<StartAgainWrap>
