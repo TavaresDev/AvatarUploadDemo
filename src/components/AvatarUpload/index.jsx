@@ -12,18 +12,18 @@ const AvatarUpload = ({ setCroppedImage }) => {
 	const [isUploadFail, setIsUploadFail] = useState(false)
 	const cropper = createRef()
 
-    // On img change get preview
+	// On img change get preview
 	const getImagePreview = () => {
 		if (cropper.current) {
 			setPreview(cropper.current.getImageScaledToCanvas().toDataURL())
 		}
 	}
-    // To make img change on zoom change
+	// To make img change on zoom change
 	useEffect(() => {
 		setPreview(cropper.current.getImageScaledToCanvas().toDataURL())
-	}, [zoom,cropper])
+	}, [zoom, cropper])
 
-    // set Img on drop
+	// set Img on drop
 	const onDrop = React.useCallback((acceptedFiles) => {
 		setAvatarImage(acceptedFiles[0])
 	}, [])
@@ -49,7 +49,8 @@ const AvatarUpload = ({ setCroppedImage }) => {
 	}
 	const handleSave = () => {
 		setCroppedImage(preview)
-		// setPreview(null)
+		setAvatarImage("")
+		setPreview("")
 	}
 
 	const style = {
@@ -59,6 +60,7 @@ const AvatarUpload = ({ setCroppedImage }) => {
 	return (
 		<>
 			<div>
+				{/* dropZoneInputs */}
 				<div {...getRootProps()}>
 					<input {...getInputProps()} />
 					{avatarImage ? " " : <InputBox handleNewImage={handleNewImage} />}
@@ -72,7 +74,7 @@ const AvatarUpload = ({ setCroppedImage }) => {
 						borderRadius={100}
 						onLoadFailure={handleLoadFailure}
 						onLoadSuccess={handleLoadSuccess}
-						onPositionChange={getImagePreview}
+						onImageChange={getImagePreview}
 						scale={zoom}
 						rotate={0}
 					/>

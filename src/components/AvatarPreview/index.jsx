@@ -50,7 +50,7 @@ const AvatarPreview = ({ handleClose, handleSave, setZoom, zoom, preview }) => {
 				<ClearIcon />
 			</button>
 			<Grid sm={4}>
-				<img alt='Preview Image' src={preview} />
+				<img alt='Preview' src={preview} />
 	
 			</Grid>
 			<Grid sm={8}>
