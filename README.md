@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Croct React Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+- live link  - []()
 
-In the project directory, you can run:
 
-### `yarn start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+This is Avatar Uploader component, made as part of Croct Front-End hiring process.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This seemed to be a simple project but was not simple to get the functioality and design working togather.This was my building process: after understanding the requirements and the layout, I started testing Libs to help with the avatar edit and dropzone. 
 
-### `yarn build`
+Decide to use https://yarnpkg.com/package/react-avatar-editor and https://yarnpkg.com/package/dropzone.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Also using material UI to accelerate the building process, and styled-components for detailed components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+My file/components structure is loosely based on the atomic design by Brad Frost. My intention was to separate business logic from style components. This simplifies the logic components and improves maintenance and code reusability, is easy to change inner components without affecting the logic, or change the logic without affecting the inner components.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Technologies
+-   JavaScript
+-   React
+-   Material UI
+-   styled-components
+-   react-avatar-editor
+-   react-dropzone
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## How to use
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Download the example or clone the repo 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Install:
 
-### Code Splitting
+```sh
+yarn
+```
+To run:
+```sh
+yarn start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Authot info
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Name - [Andre Tavares](https://www.linkedin.com/in/andre--tavares/)
+- Website - [andretavares.dev](https://www.andretavares.dev/)
