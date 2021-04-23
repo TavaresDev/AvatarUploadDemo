@@ -12,6 +12,7 @@ const Home = () => {
 				<AvatarUpload setCroppedImage={setCroppedImage} />
 			</Box>
 			<Box> 
+				
                 {croppedImage && 
                 <>
 				<h3> Parent Component </h3>
